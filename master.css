@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-position: top;
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  width: 450px;
+  background-color: white;
+  border-radius: 15px;
+}
+@media (max-width: 767px) {
+  body {
+    padding: 15px;
+  }
+  main {
+    width: 100%;
+  }
+}
+.image,
+.image img {
+  border-radius: 15px 15px 0 0;
+}
+.image img {
+  width: 100%;
+}
+.content {
+  padding: 40px;
+}
+.content h2 {
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.content p {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.6;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+  padding-inline: 15px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .content p {
+    padding-inline: 0;
+  }
+}
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.product img {
+  width: 48px;
+  height: 48px;
+}
+@media (max-width: 767px) {
+  .product img {
+    margin-right: 15px;
+    width: 40px;
+    height: auto;
+  }
+}
+.product .details {
+  display: flex;
+  flex-wrap: wrap;
+}
+.details span {
+  width: 100%;
+}
+.details span:first-child {
+  font-weight: 700;
+  color: hsl(223, 47%, 23%);
+}
+.details span:last-child {
+  color: hsl(224, 23%, 55%);
+}
+.product button {
+  background: none;
+  border: none;
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.3s text-decoration, 0.3s opacity;
+}
+.product button:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+input[type="submit"] {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding-block: 15px;
+  width: 100%;
+  font-weight: 700;
+  border-radius: 15px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 15px 20px 0 hsl(225deg 100% 94%);
+  transition: 0.3s opacity;
+}
+input[type="reset"] {
+  color: hsl(224, 23%, 55%);
+  background: none;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.3s color;
+  width: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: -ms-fit-content;
+  width: -o-fit-content;
+  margin-inline: auto;
+}
+input[type="submit"],
+input[type="reset"] {
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+input[type="reset"]:hover {
+  color: hsl(223, 47%, 23%);
+}
+input[type="submit"]:hover {
+  opacity: 0.5;
+}
